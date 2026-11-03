@@ -15,3 +15,12 @@ void OnTriggerEnter2D(Collider2D collision)
  Unity callback method that is automatically called when another Collider2D enters a Trigger Collider2D.
  برای تشخیص ورود آبجکت‌ها به محدوده یکدیگر، بدون اینکه برخورد فیزیکی مانع حرکت آن‌ها شود
  ---------------------------------------------------------------------
+ GetComponen
+
+ GetComponent is a Unity method used to access a component attached to a GameObject.
+```
+GetComponent<Rigidbody2D>();
+```
+متدیست که برای دسترسی  به یک کامپوننت روی یک گیم ابجکت.
+-----------------------------------------------------------
+
