@@ -40,7 +40,7 @@ GetComponent<ParticleSystem>().Play();
 GetComponent<ParticleSystem>().Stop();
 ```
 .افکت قطع می‌شود، یعنی بازیکن می‌فهمد بسته را تحویل داده . Stop()
-$$$$
+_________
 بازخورد بصری برای بازیکن، تا بفهمد بسته دارد.play() 
 
 —-
