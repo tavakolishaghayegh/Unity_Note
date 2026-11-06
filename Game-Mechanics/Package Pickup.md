@@ -34,3 +34,22 @@ if (collision.CompareTag("Package") && !hasPackage)
 ```
 میاد میگه تو شرط رو باید رعایت کنی یکی این که بسته رو گرفته باشی و از قبل نداشته باشی بسته و به بسته برخورد کرده باشی
 ______
+# تفاوت تحویل بسته :
+```
+GetComponent<ParticleSystem>().Play();
+GetComponent<ParticleSystem>().Stop();
+```
+___
+```
+(collision.CompareTag("Package")
+collision.CompareTag("customer")
+```
+——
+```
+&& !hasPackage
+&& hasPackage
+```
+
+
+
+
