@@ -23,4 +23,15 @@ GetComponent<Rigidbody2D>();
 ```
 متدیست که برای دسترسی  به یک کامپوننت روی یک گیم ابجکت.
 -----------------------------------------------------------
+```
+bool
+```
+
+bool – Used when we need to check or store a state with only two possible values: true or false.
+```
+bool=true
+bool=false
+```
+____________________________________
+
 
