@@ -16,7 +16,7 @@ GetComponent<ParticleSystem>().Play();
 Destroy(collision.gameObject, delay);
 }
 ```
-#توضیحات درباره ی گرفتن  یک بسته توسط چیزی :
+# توضیحات درباره ی گرفتن  یک بسته توسط چیزی :
 ```
 hasPackage=true
 ```
@@ -26,7 +26,9 @@ ____
 hasPackage=false
 ```
 یعنی بسته  تحویل داده 
-
-
-
-
+----------
+'''
+if (collision.CompareTag("Package") && !hasPackage)
+'''
+میاد میگه تو شرط رو باید رعایت کنی یکی این که بسته رو گرفته باشی و از قبل نداشته باشی بسته و به بسته برخورد کرده باشی
+____
