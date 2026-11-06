@@ -8,23 +8,23 @@ When the car touches a package:
 example:
 
 
-‘’’
+```
 if (collision.CompareTag("Package") && !hasPackage)
 {
 hasPackage = true;
 GetComponent<ParticleSystem>().Play();
 Destroy(collision.gameObject, delay);
 }
-‘’’
+```
 #توضیحات درباره ی گرفتن  یک بسته توسط چیزی :
-‘’’
+```
 hasPackage=true
-‘’’
+```
 یعنی بسته رو گرفته 
 ____
-‘’’
+```
 hasPackage=false
-‘’’
+```
 یعنی بسته  تحویل داده 
 
 
