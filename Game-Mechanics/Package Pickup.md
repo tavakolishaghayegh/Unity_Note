@@ -53,7 +53,7 @@ collision.CompareTag("customer")
 && !hasPackage
 && hasPackage
 ```
-
+(!)جلوی برداشتن چند تا بسته رو‌میگیره موقع گرفتن بسته 
 
 
 
