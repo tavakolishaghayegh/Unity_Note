@@ -41,7 +41,8 @@ GetComponent<ParticleSystem>().Stop();
 ```
 .افکت قطع می‌شود، یعنی بازیکن می‌فهمد بسته را تحویل داده . Stop()
 .بازخورد بصری برای بازیکن، تا بفهمد بسته دارد.play() 
-——
+
+—-
 ```
 (collision.CompareTag("Package")
 collision.CompareTag("customer")
