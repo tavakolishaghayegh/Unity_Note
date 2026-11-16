@@ -1,4 +1,6 @@
 # unity  Scripting 
+
+# [SerializeField]
 ```
 [SerializeField]
 ```
@@ -7,7 +9,7 @@ What is it?
 
 [SerializeField] allows a private variable to be visible and editable in the Unity Inspector.
 -----------------------------------------------------------------------
-OnTriggerEnter2D
+# OnTriggerEnter2D
 
 ```
 void OnTriggerEnter2D(Collider2D collision)
@@ -17,7 +19,7 @@ void OnTriggerEnter2D(Collider2D collision)
  --
  محدوده  وقتی وارد بشه
  ---------------------------------------------------------------------
- GetComponen
+ # GetComponen
 
  GetComponent is a Unity method used to access a component attached to a GameObject.
 ```
@@ -25,6 +27,7 @@ GetComponent<Rigidbody2D>();
 ```
 متدیست که برای دسترسی  به یک کامپوننت روی یک گیم ابجکت.
 -----------------------------------------------------------
+# bool
 ```
 bool
 ```
@@ -35,7 +38,7 @@ bool=true
 bool=false
 ```
 ____________________________________
-Destroy 
+# Destroy 
 ```
 Destroy(collision.gameObject);
 ```
