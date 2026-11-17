@@ -16,8 +16,8 @@ transform.Translate(x, y * Time.deltaTime, z);
 ______________________________________________________________________________
 Example of rotation and moving  :
 ```
-float steerSpeed = 1f;
-float moveSpeed = 0.01f;
+[SerializeField] float steerSpeed = 1f;
+[SerializeField] float moveSpeed = 0.01f;
 void Update()
 {
 transform. Rotate(0, 0, steerSpeed);
