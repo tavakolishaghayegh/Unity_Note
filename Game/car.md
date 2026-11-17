@@ -44,8 +44,20 @@ using UnityEngine.InputSystem;
             steer = 1f;
         }
 
+
         else if (Keyboard.current.dKey.isPressed)
         {
             steer= -1f;
         }
 ```
+___________________________________________________________
+# Using Time deltaTime
+ • Using Time. deltaTime Unity can tell us how long each frame took to execute.
+ ```
+void Update()
+{
+    transform.Translate(0, 0, 10 * Time.deltaTime);
+}
+```
+_________________________________________________________________
+
