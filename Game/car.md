@@ -24,3 +24,28 @@ transform. Rotate(0, 0, steerSpeed);
 transform. Translate(0, moveSpeed, 0);
 }
 ```
+_____________________________________________________________________ 
+# use keyboards for move and rotate :
+```
+using UnityEngine.InputSystem;
+
+        if (Keyboard.current.wKey.isPressed)
+        {
+            move = 1f;
+            }
+
+        else if (Keyboard.current.sKey.isPressed)
+        {
+            move = -1f;
+        }
+
+        if (Keyboard.current.aKey.isPressed)
+        {
+            steer = 1f;
+        }
+
+        else if (Keyboard.current.dKey.isPressed)
+        {
+            steer= -1f;
+        }
+```
