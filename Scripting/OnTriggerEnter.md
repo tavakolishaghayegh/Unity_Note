@@ -1,3 +1,7 @@
+# OnTriggerEnter()
+• Used to detect when another GameObject enters a 2D Trigger Collider. 
+
+
 Example of delivery-car game:
 ماشین از روی بسته عبور می‌کنه، بسته شناسایی می‌شه و از صحنه حذف می‌شه؛ بدون اینکه جلوی حرکت ماشین رو بگیره
 ```
@@ -9,3 +13,5 @@ void OnTriggerEnter2D(Collider2D collision)
     }
 }
 ```
+• Collider2D collision: آبجکتی را که با آن برخورد شده دریافت می‌کند.    
+is Trigger=on.
