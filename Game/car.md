@@ -103,7 +103,74 @@ if(collision.CompareTag("Package") && !hasPackage )
         }
 
 ```
-________________________________________________________________________________________-
+_______________________________________________________________________________________________
+# bool
+ A bool is a data type that stores only two possible values: true or false.
+```
+bool hasPackage;
+```
+Example :
+```
+ if(collision.CompareTag("customer") && hasPackage)
+        {
+             Debug.Log("picked up Package");
+             hasPackage= false;
+             GetComponent<ParticleSystem>().Stop();
+              Destroy(collision.gameObject);
+        }
+
+```
+متغیر hasPackage وضعیت داشتن بسته رو کنترل می‌کنه:
+• true = ماشین بسته دارد.
+• false = ماشین بسته ندارد.
+```
+if(collision.CompareTag("Package") && !hasPackage )
+        {
+             Debug.Log("Deliverd package");
+             hasPackage= true;
+             GetComponent<ParticleSystem>().Play();
+             Destroy(collision.gameObject , delay);
+        }
+```
+_____
+در این مثال ها بسته رو گرفته  بعد که تحویل میده بسته رو فالس میکنه که بسته ای نباشه دیگه  و ابجکت مشتری حذف میشه
+_____________________________________________
+# Destroy ()
+```
+Destroy ();
+```
+ • Use [SerializeField] so that we can tune how long the delay is before destroy or disappears.
+ ```
+[SerializeField] float delay = f ;
+Destroy(collision.gameObject, delay);
+```
+Example :
+```
+[SerializeField] float delay = 1f ;
+if(collision.CompareTag("Package") && !hasPackage )
+        {
+             
+             Destroy(collision.gameObject , delay);
+        }
+```
+______________________________________________________
+# بسته مثل یک آیتم قابل جمع‌آوری عمل می‌کنه، استفاده از OnTriggerEnter2D() انتخاب مناسبیه.
+```
+ void OnTriggerEnter2D(Collider2D collision) 
+    {
+        
+        if(collision.CompareTag("Package") && !hasPackage )
+        {
+             Debug.Log("picked up Package");
+             hasPackage= true;
+             GetComponent<ParticleSystem>().Play();
+             Destroy(collision.gameObject , delay);
+        }
+```
+________________________________________________________
+      
+
+
 
 
 
