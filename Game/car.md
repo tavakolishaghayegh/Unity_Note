@@ -84,7 +84,26 @@ void OnCollisionEnter2D(Collision2D collision)
 
 
 ___________________________________________________________________________
+# If Statements
+• If statements let us check if something is true or not and then do something based upon the result.
+```
+if (condition)
+{
+    // Code executes if condition is true
+}
+```
+Example :
+```
+if(collision.CompareTag("Package") && !hasPackage )
+        {
+             Debug.Log("picked up Package");
+             hasPackage= true;
+             GetComponent<ParticleSystem>().Play();
+             Destroy(collision.gameObject , delay);
+        }
 
+```
+________________________________________________________________________________________-
 
 
 
