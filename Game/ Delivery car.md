@@ -168,6 +168,45 @@ ______________________________________________________
         }
 ```
 ________________________________________________________
+# !hasPackage
+```
+if (collision.CompareTag("Package") && !hasPackage)
+```
+. آبجکت برخوردشده باید تگ Package داشته باشد.
+2. ماشین نباید از قبل بسته‌ای داشته باشد
+___________________________________________________
+# Change color or effect after get package 
+
+```
+   GetComponent<ParticleSystem>().Play();
+```
+______________________________
+#  GetComponent<>
+GetComponent<>(): Used to access a specific Component attached to the same GameObject.  
+
+Example :  
+```
+void OnCollisionEnter2D(Collision2D collision)
+{
+    GetComponent<AudioSource>().Play();
+}
+```
+________________________
+# Average speed :
+boost tag
+```
+[SerializeField]float CurrentSpeed = 6f;
+[SerializeField] float boostSpeed =10f;
+[SerializeField] float regularSpeed=5f;
+
+void OnTriggerEnter2D(Collider2D collision) {
+        if(collision.CompareTag("boost"))
+        {
+         CurrentSpeed= boostSpeed;
+           
+    }
+```
+___________________________________-
       
 
 
