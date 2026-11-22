@@ -165,6 +165,28 @@ SurfaceEffector2D surfaceEffector2D;
 وقتی بازیکن کلید بالا را فشار می‌دهد، مقدار moveVector.y مثبت می‌شود. 
 
 ____________________________________________________________________________
+# OnCollisionExit2D
+این متد برای پایان تماس فیزیکی استفاده می‌شود.  
+```
+ [SerializeField] ParticleSystem snowParticles;
+void OnCollisionExit2D(Collision2D collision)
+{
+ int layerIndex=LayerMask.NameToLayer("Floor");
+        if (collision.gameObject.layer == layerIndex){
+    snowParticles.Stop();
+}
+}
+```
+برعکس:
+```
+ [SerializeField] ParticleSystem snowParticles;
+void OnCollisionEnter2D(Collision2D collision)
+{
+ 
+            snowParticles.Play();
+        }
+```
+____________________________________________________________
 
 
 
